@@ -1,0 +1,623 @@
+The system is: Windows - 10.0.17763 - AMD64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+.NET Framework ���� Microsoft (R) Build Engine �o�[�W���� 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:11 �Ƀr���h���J�n���܂����B
+�m�[�h 1 ��̃v���W�F�N�g "C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdC\CompilerIdC.vcxproj" (����̃^�[�Q�b�g)�B
+PrepareForBuild:
+  �f�B���N�g�� "Debug\" ���쐬���Ă��܂��B
+  �f�B���N�g�� "Debug\CompilerIdC.tlog\" ���쐬���Ă��܂��B
+InitializeBuildStatus:
+  "AlwaysCreate" ���w�肳�ꂽ���� "Debug\CompilerIdC.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue CMakeCCompilerId.c
+  CMakeCCompilerId.c
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCCompilerId.obj
+  CompilerIdC.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdC\.\CompilerIdC.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_C_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  �t�@�C�� "Debug\CompilerIdC.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+  "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+�v���W�F�N�g "C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdC\CompilerIdC.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+
+�r���h�ɐ������܂����B
+    0 �̌x��
+    0 �G���[
+
+�o�ߎ��� 00:00:00.78
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
+
+The C compiler identification is MSVC, found in "C:/nnabla-c-runtime/CMakeFiles/3.9.6/CompilerIdC/CompilerIdC.exe"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler:  
+Build flags: 
+Id flags:  
+
+The output was:
+0
+.NET Framework ���� Microsoft (R) Build Engine �o�[�W���� 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:12 �Ƀr���h���J�n���܂����B
+�m�[�h 1 ��̃v���W�F�N�g "C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdCXX\CompilerIdCXX.vcxproj" (����̃^�[�Q�b�g)�B
+PrepareForBuild:
+  �f�B���N�g�� "Debug\" ���쐬���Ă��܂��B
+  �f�B���N�g�� "Debug\CompilerIdCXX.tlog\" ���쐬���Ă��܂��B
+InitializeBuildStatus:
+  "AlwaysCreate" ���w�肳�ꂽ���� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" ���쐬���Ă��܂��B
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /nologo /W0 /WX- /diagnostics:classic /Od /Oy- /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue CMakeCXXCompilerId.cpp
+  CMakeCXXCompilerId.cpp
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X86 /SAFESEH Debug\CMakeCXXCompilerId.obj
+  CompilerIdCXX.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdCXX\.\CompilerIdCXX.exe
+PostBuildEvent:
+  for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
+  :VCEnd
+  CMAKE_CXX_COMPILER=C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\Hostx86\x86\cl.exe
+FinalizeBuildStatus:
+  �t�@�C�� "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" ���폜���Ă��܂��B
+  "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate" �̃^�b�` �^�X�N�����s���Ă��܂��B
+�v���W�F�N�g "C:\nnabla-c-runtime\CMakeFiles\3.9.6\CompilerIdCXX\CompilerIdCXX.vcxproj" (����̃^�[�Q�b�g) �̃r���h���������܂����B
+
+�r���h�ɐ������܂����B
+    0 �̌x��
+    0 �G���[
+
+�o�ߎ��� 00:00:00.89
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
+
+The CXX compiler identification is MSVC, found in "C:/nnabla-c-runtime/CMakeFiles/3.9.6/CompilerIdCXX/CompilerIdCXX.exe"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ed817.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:13 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_ed817.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_ed817.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_ed817.dir\Debug\cmTC_ed817.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_ed817.dir\Debug\cmTC_ed817.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed817.dir\Debug\\" /Fd"cmTC_ed817.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\testCCompiler.c"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ed817.dir\Debug\\" /Fd"cmTC_ed817.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\testCCompiler.c"
+  testCCompiler.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_ed817.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_ed817.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_ed817.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ed817.dir\Debug\testCCompiler.obj
+  cmTC_ed817.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_ed817.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_ed817.dir\Debug\cmTC_ed817.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_ed817.dir\Debug\cmTC_ed817.tlog\cmTC_ed817.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_ed817.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.91
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_ddbff.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:14 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_ddbff.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_ddbff.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_ddbff.dir\Debug\cmTC_ddbff.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_ddbff.dir\Debug\cmTC_ddbff.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ddbff.dir\Debug\\" /Fd"cmTC_ddbff.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\app\msys32\mingw32\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ddbff.dir\Debug\\" /Fd"cmTC_ddbff.dir\Debug\vc141.pdb" /Gd /TC /analyze- /errorReport:queue "C:\app\msys32\mingw32\share\cmake-3.9\Modules\CMakeCCompilerABI.c"
+  CMakeCCompilerABI.c
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_ddbff.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_ddbff.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_ddbff.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_ddbff.dir\Debug\CMakeCCompilerABI.obj
+  cmTC_ddbff.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_ddbff.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_ddbff.dir\Debug\cmTC_ddbff.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_ddbff.dir\Debug\cmTC_ddbff.tlog\cmTC_ddbff.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_ddbff.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.85
+
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_27b63.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:15 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_27b63.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_27b63.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_27b63.dir\Debug\cmTC_27b63.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_27b63.dir\Debug\cmTC_27b63.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_27b63.dir\Debug\\" /Fd"cmTC_27b63.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_27b63.dir\Debug\\" /Fd"cmTC_27b63.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\testCXXCompiler.cxx"
+  testCXXCompiler.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_27b63.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_27b63.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_27b63.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_27b63.dir\Debug\testCXXCompiler.obj
+  cmTC_27b63.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_27b63.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_27b63.dir\Debug\cmTC_27b63.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_27b63.dir\Debug\cmTC_27b63.tlog\cmTC_27b63.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_27b63.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.90
+
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_9f6f8.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:16 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_9f6f8.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_9f6f8.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_9f6f8.dir\Debug\cmTC_9f6f8.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_9f6f8.dir\Debug\cmTC_9f6f8.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9f6f8.dir\Debug\\" /Fd"cmTC_9f6f8.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\app\msys32\mingw32\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_9f6f8.dir\Debug\\" /Fd"cmTC_9f6f8.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\app\msys32\mingw32\share\cmake-3.9\Modules\CMakeCXXCompilerABI.cpp"
+  CMakeCXXCompilerABI.cpp
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_9f6f8.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_9f6f8.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_9f6f8.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_9f6f8.dir\Debug\CMakeCXXCompilerABI.obj
+  cmTC_9f6f8.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_9f6f8.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_9f6f8.dir\Debug\cmTC_9f6f8.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_9f6f8.dir\Debug\cmTC_9f6f8.tlog\cmTC_9f6f8.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_9f6f8.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.93
+
+
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_f2a16.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:18 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_f2a16.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_f2a16.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_f2a16.dir\Debug\cmTC_f2a16.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_f2a16.dir\Debug\cmTC_f2a16.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f2a16.dir\Debug\\" /Fd"cmTC_f2a16.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_f2a16.dir\Debug\\" /Fd"cmTC_f2a16.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_f2a16.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_f2a16.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_f2a16.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_f2a16.dir\Debug\feature_tests.obj
+  cmTC_f2a16.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_f2a16.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_f2a16.dir\Debug\cmTC_f2a16.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_f2a16.dir\Debug\cmTC_f2a16.tlog\cmTC_f2a16.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_f2a16.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.88
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_05df9.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:19 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_05df9.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_05df9.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_05df9.dir\Debug\cmTC_05df9.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_05df9.dir\Debug\cmTC_05df9.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_05df9.dir\Debug\\" /Fd"cmTC_05df9.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_05df9.dir\Debug\\" /Fd"cmTC_05df9.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_05df9.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_05df9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_05df9.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_05df9.dir\Debug\feature_tests.obj
+  cmTC_05df9.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_05df9.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_05df9.dir\Debug\cmTC_05df9.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_05df9.dir\Debug\cmTC_05df9.tlog\cmTC_05df9.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_05df9.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.95
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_6e0e6.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:20 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_6e0e6.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_6e0e6.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_6e0e6.dir\Debug\cmTC_6e0e6.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_6e0e6.dir\Debug\cmTC_6e0e6.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6e0e6.dir\Debug\\" /Fd"cmTC_6e0e6.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_6e0e6.dir\Debug\\" /Fd"cmTC_6e0e6.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_6e0e6.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_6e0e6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_6e0e6.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_6e0e6.dir\Debug\feature_tests.obj
+  cmTC_6e0e6.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_6e0e6.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_6e0e6.dir\Debug\cmTC_6e0e6.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_6e0e6.dir\Debug\cmTC_6e0e6.tlog\cmTC_6e0e6.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_6e0e6.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.94
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates
+
+
+Detecting CXX [] compiler features compiled with the following output:
+Change Dir: C:/nnabla-c-runtime/CMakeFiles/CMakeTmp
+
+Run Build Command:"C:\Program Files (x86)\Microsoft Visual Studio\2017\Community/MSBuild/15.0/Bin/MSBuild.exe" "cmTC_e43bd.vcxproj" "/p:Configuration=Debug" "/p:VisualStudioVersion=15.0"
+.NET Framework 向け Microsoft (R) Build Engine バージョン 15.5.180.51428
+Copyright (C) Microsoft Corporation.All rights reserved.
+
+2019/06/21 8:53:21 にビルドを開始しました。
+ノード 1 上のプロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_e43bd.vcxproj" (既定のターゲット)。
+PrepareForBuild:
+  ディレクトリ "cmTC_e43bd.dir\Debug\" を作成しています。
+  ディレクトリ "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\" を作成しています。
+  ディレクトリ "cmTC_e43bd.dir\Debug\cmTC_e43bd.tlog\" を作成しています。
+InitializeBuildStatus:
+  "AlwaysCreate" が指定されたため "cmTC_e43bd.dir\Debug\cmTC_e43bd.tlog\unsuccessfulbuild" を作成しています。
+ClCompile:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\CL.exe /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e43bd.dir\Debug\\" /Fd"cmTC_e43bd.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  Microsoft(R) C/C++ Optimizing Compiler Version 19.12.25834 for x86
+  Copyright (C) Microsoft Corporation.  All rights reserved.
+  
+  cl /c /Zi /W3 /WX- /diagnostics:classic /Od /Ob0 /Oy- /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /D _MBCS /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_e43bd.dir\Debug\\" /Fd"cmTC_e43bd.dir\Debug\vc141.pdb" /Gd /TP /analyze- /errorReport:queue "C:\nnabla-c-runtime\CMakeFiles\feature_tests.cxx"
+  feature_tests.cxx
+  
+Link:
+  C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.12.25827\bin\HostX86\x86\link.exe /ERRORREPORT:QUEUE /OUT:"C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_e43bd.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_e43bd.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/nnabla-c-runtime/CMakeFiles/CMakeTmp/Debug/cmTC_e43bd.lib" /MACHINE:X86 /SAFESEH  /machine:X86 cmTC_e43bd.dir\Debug\feature_tests.obj
+  cmTC_e43bd.vcxproj -> C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\Debug\cmTC_e43bd.exe
+FinalizeBuildStatus:
+  ファイル "cmTC_e43bd.dir\Debug\cmTC_e43bd.tlog\unsuccessfulbuild" を削除しています。
+  "cmTC_e43bd.dir\Debug\cmTC_e43bd.tlog\cmTC_e43bd.lastbuildstate" のタッチ タスクを実行しています。
+プロジェクト "C:\nnabla-c-runtime\CMakeFiles\CMakeTmp\cmTC_e43bd.vcxproj" (既定のターゲット) のビルドが完了しました。
+
+ビルドに成功しました。
+    0 個の警告
+    0 エラー
+
+経過時間 00:00:00.86
+
+
+    Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
+    Feature record: CXX_FEATURE:1cxx_alias_templates
+    Feature record: CXX_FEATURE:1cxx_alignas
+    Feature record: CXX_FEATURE:1cxx_alignof
+    Feature record: CXX_FEATURE:1cxx_attributes
+    Feature record: CXX_FEATURE:1cxx_attribute_deprecated
+    Feature record: CXX_FEATURE:1cxx_auto_type
+    Feature record: CXX_FEATURE:1cxx_binary_literals
+    Feature record: CXX_FEATURE:1cxx_constexpr
+    Feature record: CXX_FEATURE:1cxx_contextual_conversions
+    Feature record: CXX_FEATURE:1cxx_decltype
+    Feature record: CXX_FEATURE:1cxx_decltype_auto
+    Feature record: CXX_FEATURE:1cxx_default_function_template_args
+    Feature record: CXX_FEATURE:1cxx_defaulted_functions
+    Feature record: CXX_FEATURE:1cxx_defaulted_move_initializers
+    Feature record: CXX_FEATURE:1cxx_delegating_constructors
+    Feature record: CXX_FEATURE:1cxx_deleted_functions
+    Feature record: CXX_FEATURE:1cxx_digit_separators
+    Feature record: CXX_FEATURE:1cxx_enum_forward_declarations
+    Feature record: CXX_FEATURE:1cxx_explicit_conversions
+    Feature record: CXX_FEATURE:1cxx_extended_friend_declarations
+    Feature record: CXX_FEATURE:1cxx_extern_templates
+    Feature record: CXX_FEATURE:1cxx_final
+    Feature record: CXX_FEATURE:1cxx_func_identifier
+    Feature record: CXX_FEATURE:1cxx_generalized_initializers
+    Feature record: CXX_FEATURE:1cxx_generic_lambdas
+    Feature record: CXX_FEATURE:1cxx_inheriting_constructors
+    Feature record: CXX_FEATURE:1cxx_inline_namespaces
+    Feature record: CXX_FEATURE:1cxx_lambdas
+    Feature record: CXX_FEATURE:1cxx_lambda_init_captures
+    Feature record: CXX_FEATURE:1cxx_local_type_template_args
+    Feature record: CXX_FEATURE:1cxx_long_long_type
+    Feature record: CXX_FEATURE:1cxx_noexcept
+    Feature record: CXX_FEATURE:1cxx_nonstatic_member_init
+    Feature record: CXX_FEATURE:1cxx_nullptr
+    Feature record: CXX_FEATURE:1cxx_override
+    Feature record: CXX_FEATURE:1cxx_range_for
+    Feature record: CXX_FEATURE:1cxx_raw_string_literals
+    Feature record: CXX_FEATURE:1cxx_reference_qualified_functions
+    Feature record: CXX_FEATURE:1cxx_return_type_deduction
+    Feature record: CXX_FEATURE:1cxx_right_angle_brackets
+    Feature record: CXX_FEATURE:1cxx_rvalue_references
+    Feature record: CXX_FEATURE:1cxx_sizeof_member
+    Feature record: CXX_FEATURE:1cxx_static_assert
+    Feature record: CXX_FEATURE:1cxx_strong_enums
+    Feature record: CXX_FEATURE:1cxx_template_template_parameters
+    Feature record: CXX_FEATURE:1cxx_thread_local
+    Feature record: CXX_FEATURE:1cxx_trailing_return_types
+    Feature record: CXX_FEATURE:1cxx_unicode_literals
+    Feature record: CXX_FEATURE:1cxx_uniform_initialization
+    Feature record: CXX_FEATURE:1cxx_unrestricted_unions
+    Feature record: CXX_FEATURE:1cxx_user_literals
+    Feature record: CXX_FEATURE:1cxx_variable_templates
+    Feature record: CXX_FEATURE:1cxx_variadic_macros
+    Feature record: CXX_FEATURE:1cxx_variadic_templates

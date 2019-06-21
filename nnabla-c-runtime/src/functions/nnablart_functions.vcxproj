@@ -1,0 +1,354 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|Win32">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|Win32">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{C04679E6-36A1-36DE-9BAC-FDF36D85E706}</ProjectGuid>
+    <WindowsTargetPlatformVersion>10.0.16299.0</WindowsTargetPlatformVersion>
+    <Keyword>Win32Proj</Keyword>
+    <Platform>Win32</Platform>
+    <ProjectName>nnablart_functions</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\nnabla-c-runtime\src\functions\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nnablart_functions.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">nnablart_functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\nnabla-c-runtime\src\functions\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nnablart_functions.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">nnablart_functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\nnabla-c-runtime\src\functions\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nnablart_functions.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">nnablart_functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">.lib</TargetExt>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\nnabla-c-runtime\src\functions\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nnablart_functions.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">nnablart_functions</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">.lib</TargetExt>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Debug/</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;CMAKE_INTDIR="Debug";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;CMAKE_INTDIR=\"Debug\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>Release/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="Release";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"Release\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>MinSizeRel/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="MinSizeRel";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"MinSizeRel\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AssemblerListingLocation>RelWithDebInfo/</AssemblerListingLocation>
+      <CompileAs>CompileAsC</CompileAs>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>
+      </ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR="RelWithDebInfo";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;CMAKE_INTDIR=\"RelWithDebInfo\";%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\nnabla-c-runtime\src\functions\..\..\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Lib>
+      <AdditionalOptions>%(AdditionalOptions) /machine:X86</AdditionalOptions>
+    </Lib>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\nnabla-c-runtime\src\functions\CMakeLists.txt">
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Building Custom Rule C:/nnabla-c-runtime/src/functions/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">setlocal
+C:\app\msys32\mingw32\bin\cmake.exe -HC:/nnabla-c-runtime -BC:/nnabla-c-runtime --check-stamp-file C:/nnabla-c-runtime/src/functions/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:/nnabla-c-runtime/src/functions/CMakeLists.txt;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;C:\nnabla-c-runtime\build-tools\cmake\common.cmake;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\nnabla-c-runtime\src\functions\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Building Custom Rule C:/nnabla-c-runtime/src/functions/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">setlocal
+C:\app\msys32\mingw32\bin\cmake.exe -HC:/nnabla-c-runtime -BC:/nnabla-c-runtime --check-stamp-file C:/nnabla-c-runtime/src/functions/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:/nnabla-c-runtime/src/functions/CMakeLists.txt;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;C:\nnabla-c-runtime\build-tools\cmake\common.cmake;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\nnabla-c-runtime\src\functions\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">Building Custom Rule C:/nnabla-c-runtime/src/functions/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">setlocal
+C:\app\msys32\mingw32\bin\cmake.exe -HC:/nnabla-c-runtime -BC:/nnabla-c-runtime --check-stamp-file C:/nnabla-c-runtime/src/functions/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:/nnabla-c-runtime/src/functions/CMakeLists.txt;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;C:\nnabla-c-runtime\build-tools\cmake\common.cmake;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">C:\nnabla-c-runtime\src\functions\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|Win32'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">Building Custom Rule C:/nnabla-c-runtime/src/functions/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">setlocal
+C:\app\msys32\mingw32\bin\cmake.exe -HC:/nnabla-c-runtime -BC:/nnabla-c-runtime --check-stamp-file C:/nnabla-c-runtime/src/functions/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:/nnabla-c-runtime/src/functions/CMakeLists.txt;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;C:\nnabla-c-runtime\build-tools\cmake\common.cmake;C:\nnabla-c-runtime\src\functions\CMakeLists.txt;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">C:\nnabla-c-runtime\src\functions\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|Win32'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\utilities\accessor.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\utilities\list.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\utilities\shape.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\pooling.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\affine\affine.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\affine\affine_generic.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\max_pooling.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\sum_pooling.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\average_pooling.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\unpooling.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\convolution.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\convolution_generic.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\convolution_float.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\convolution_common.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\binary_connect_convolution.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\binary_weight_convolution.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\convolution\depthwise_convolution.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\neural_network\deconvolution.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\sigmoid.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\relu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\tanh.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\softmax.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\selu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\elu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\prelu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\leakyrelu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\crelu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\celu.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\activation\swish.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\abs.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\batch_matmul.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\exp.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\identity.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\log.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\math\round.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\quantization\binary_tanh.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\quantization\binary_sigmoid.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\quantization\binary_connect_affine.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\quantization\binary_weight_affine.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\add_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\arithmetic.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\arithmetic_generic.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\div2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\mul2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\mul_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\pow2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\pow_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\r_div_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\r_pow_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\r_sub_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\sub2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\arithmetic\add2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\logical\maximum_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\logical\minimum_scalar.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\logical\maximum2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\logical\minimum2.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\logical\sign.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\matrix_diag.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\matrix_diag_part.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\reshape.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\concatenate.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\split.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\stack.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\shift.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\slice.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\flip.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\transpose.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\array\pad.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\normalization\batch_normalization.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\normalization\mean_subtraction.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\stochasticity\dropout.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\reduction\sum.c" />
+    <ClCompile Include="C:\nnabla-c-runtime\src\functions\implements\unimplemented.c" />
+    <ClCompile Include="c_source\MainRuntime_example.c" />
+    <ClCompile Include="c_source\MainRuntime_inference.c" />
+    <ClCompile Include="c_source\MainRuntime_parameters.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\nnabla-c-runtime\ZERO_CHECK.vcxproj">
+      <Project>{899980DE-AE30-3E42-A461-A53CC0DC8709}</Project>
+      <Name>ZERO_CHECK</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="c_source\MainRuntime_inference.h" />
+    <ClInclude Include="c_source\MainRuntime_parameters.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
