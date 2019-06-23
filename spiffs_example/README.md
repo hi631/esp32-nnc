@@ -1,3 +1,9 @@
+##Note
+This is a version with some changes to the original as an example of data creation.
+Please refer to the following URL usually.
+https://github.com/loboris/ESP32_spiffs_example
+
+---
 
 ## Example of using **SPIFFS** with modified esp_idf spiffs VFS driver
 
