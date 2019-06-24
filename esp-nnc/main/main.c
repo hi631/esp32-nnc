@@ -8,13 +8,6 @@
 #include "esp_err.h"
 #include "esp_log.h"
 #include "esp_spiffs.h"
-
-//#include <stdio.h>
-//#include <stdlib.h>
-//#include <string.h>
-//#include <time.h>
-//#include <sys/time.h>
-//#include <sys/unistd.h>
 #include "esp_vfs.h"
 
 extern int main();
@@ -67,15 +60,17 @@ void spiffs_init(){
     }
     
 }
+
 void spiffs_listdir(const char* path)
 {
     char name_dir_file[64];
+    printf("Spiffs.Dir.Info\n");
     unlink(name_dir_file);
     DIR* dir = opendir(path);
     while (true) {
         struct dirent* de = readdir(dir);
         if (!de) break;
-        printf("[%s]\n", de->d_name); 
+        printf(" %s\n", de->d_name); 
     }
     printf("\n");
     unlink(name_dir_file);
@@ -86,8 +81,6 @@ void app_main(void)
     gpio_pad_select_gpio(BLINK_GPIO);
     gpio_set_direction(BLINK_GPIO, GPIO_MODE_OUTPUT);
     gpio_set_level(BLINK_GPIO, 1);
-	spiffs_init();
-
     printf("Start\n");
     
 	main();
@@ -96,4 +89,3 @@ void app_main(void)
     printf("Stop\n");
     blink(); // Stop
 }
-
