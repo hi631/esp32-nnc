@@ -46,6 +46,7 @@ int main(int argc, char* argv[])
 	if (fp == NULL) printf("File not.found");
 	fgets(buf, 256, fp);
 #else
+    spiffs_init();
     spiffs_listdir("/spiffs");
 	FILE* fp = fopen("/spiffs/iris_flower.csv", "r");
 	if (fp == NULL) { printf("open.error"); while (1); }
