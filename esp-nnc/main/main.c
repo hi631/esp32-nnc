@@ -90,10 +90,6 @@ void app_main(void)
 
     printf("Start\n");
     
-#ifdef ESP32
-	printf("ESP32");
-#endif
-    
 	main();
     
     gpio_set_level(BLINK_GPIO, 0);
