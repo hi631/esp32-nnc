@@ -72,8 +72,10 @@ void spiffs_listdir(const char* path)
         if (!de) break;
         printf(" %s\n", de->d_name); 
     }
-    printf("\n");
     unlink(name_dir_file);
+    size_t total = 0, used = 0;
+    esp_spiffs_info(NULL, &total, &used);
+    printf("Partition size: total: %d, used: %d\n\n", total, used);
 }
 
 void app_main(void)
