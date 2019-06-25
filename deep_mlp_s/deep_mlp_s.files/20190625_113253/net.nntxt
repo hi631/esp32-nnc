@@ -1,0 +1,934 @@
+global_config {
+  default_context {
+    array_class: "CudaCachedArray"
+    device_id: "0"
+    backends: "cudnn:float"
+    backends: "cuda:float"
+    backends: "cpu:float"
+  }
+}
+training_config {
+  max_epoch: 100
+  iter_per_epoch: 937
+  save_best: true
+  monitor_interval: 10
+}
+network {
+  name: "Main"
+  batch_size: 64
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 256 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 256 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 256 dim: 128 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 128 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 128 dim: 64 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 64 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_4/affine/W"
+    type: "Parameter"
+    shape: { dim: 64 dim: 32 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_4/affine/b"
+    type: "Parameter"
+    shape: { dim: 32 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 32 dim: 10 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 10 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "SoftmaxCrossEntropy_T"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Tanh"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Tanh_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Tanh_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Affine_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Tanh_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  variable {
+    name: "Sigmoid"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  variable {
+    name: "SoftmaxCrossEntropy"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh"
+    type: "Tanh"
+    input: "Affine"
+    output: "Tanh"
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "Tanh"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_2"
+    type: "Tanh"
+    input: "Affine_2"
+    output: "Tanh_2"
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "Tanh_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_3"
+    type: "Tanh"
+    input: "Affine_3"
+    output: "Tanh_3"
+  }
+  function {
+    name: "Affine_4"
+    type: "Affine"
+    input: "Tanh_3"
+    input: "Affine_4/affine/W"
+    input: "Affine_4/affine/b"
+    output: "Affine_4"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_4"
+    type: "Tanh"
+    input: "Affine_4"
+    output: "Tanh_4"
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Tanh_4"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Sigmoid"
+    type: "Sigmoid"
+    input: "Affine_5"
+    output: "Sigmoid"
+  }
+  function {
+    name: "SoftmaxCrossEntropy"
+    type: "SoftmaxCrossEntropy"
+    input: "Sigmoid"
+    input: "SoftmaxCrossEntropy_T"
+    output: "SoftmaxCrossEntropy"
+    softmax_cross_entropy_param {
+      axis: 1
+    }
+  }
+}
+network {
+  name: "MainValidation"
+  batch_size: 64
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 256 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 256 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 256 dim: 128 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 128 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 128 dim: 64 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 64 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_4/affine/W"
+    type: "Parameter"
+    shape: { dim: 64 dim: 32 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_4/affine/b"
+    type: "Parameter"
+    shape: { dim: 32 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 32 dim: 10 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 10 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "SoftmaxCrossEntropy_T"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Tanh"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Tanh_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Tanh_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Affine_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Tanh_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  variable {
+    name: "Sigmoid"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  variable {
+    name: "SoftmaxCrossEntropy"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh"
+    type: "Tanh"
+    input: "Affine"
+    output: "Tanh"
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "Tanh"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_2"
+    type: "Tanh"
+    input: "Affine_2"
+    output: "Tanh_2"
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "Tanh_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_3"
+    type: "Tanh"
+    input: "Affine_3"
+    output: "Tanh_3"
+  }
+  function {
+    name: "Affine_4"
+    type: "Affine"
+    input: "Tanh_3"
+    input: "Affine_4/affine/W"
+    input: "Affine_4/affine/b"
+    output: "Affine_4"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_4"
+    type: "Tanh"
+    input: "Affine_4"
+    output: "Tanh_4"
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Tanh_4"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Sigmoid"
+    type: "Sigmoid"
+    input: "Affine_5"
+    output: "Sigmoid"
+  }
+  function {
+    name: "SoftmaxCrossEntropy"
+    type: "SoftmaxCrossEntropy"
+    input: "Sigmoid"
+    input: "SoftmaxCrossEntropy_T"
+    output: "SoftmaxCrossEntropy"
+    softmax_cross_entropy_param {
+      axis: 1
+    }
+  }
+}
+network {
+  name: "MainRuntime"
+  batch_size: 64
+  variable {
+    name: "Input"
+    type: "Buffer"
+    shape: { dim:-1 dim: 1 dim: 28 dim: 28 }
+  }
+  variable {
+    name: "Affine/affine/W"
+    type: "Parameter"
+    shape: { dim: 784 dim: 256 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine/affine/b"
+    type: "Parameter"
+    shape: { dim: 256 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_2/affine/W"
+    type: "Parameter"
+    shape: { dim: 256 dim: 128 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_2/affine/b"
+    type: "Parameter"
+    shape: { dim: 128 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_3/affine/W"
+    type: "Parameter"
+    shape: { dim: 128 dim: 64 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_3/affine/b"
+    type: "Parameter"
+    shape: { dim: 64 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_4/affine/W"
+    type: "Parameter"
+    shape: { dim: 64 dim: 32 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_4/affine/b"
+    type: "Parameter"
+    shape: { dim: 32 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine_5/affine/W"
+    type: "Parameter"
+    shape: { dim: 32 dim: 10 }
+    initializer {
+      type: "NormalAffineGlorot"
+      multiplier: 1
+    }
+  }
+  variable {
+    name: "Affine_5/affine/b"
+    type: "Parameter"
+    shape: { dim: 10 }
+    initializer {
+      type: "Constant"
+      multiplier: 0
+    }
+  }
+  variable {
+    name: "Affine"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Tanh"
+    type: "Buffer"
+    shape: { dim:-1 dim: 256 }
+  }
+  variable {
+    name: "Affine_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Tanh_2"
+    type: "Buffer"
+    shape: { dim:-1 dim: 128 }
+  }
+  variable {
+    name: "Affine_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Tanh_3"
+    type: "Buffer"
+    shape: { dim:-1 dim: 64 }
+  }
+  variable {
+    name: "Affine_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Tanh_4"
+    type: "Buffer"
+    shape: { dim:-1 dim: 32 }
+  }
+  variable {
+    name: "Affine_5"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  variable {
+    name: "Sigmoid"
+    type: "Buffer"
+    shape: { dim:-1 dim: 10 }
+  }
+  function {
+    name: "Affine"
+    type: "Affine"
+    input: "Input"
+    input: "Affine/affine/W"
+    input: "Affine/affine/b"
+    output: "Affine"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh"
+    type: "Tanh"
+    input: "Affine"
+    output: "Tanh"
+  }
+  function {
+    name: "Affine_2"
+    type: "Affine"
+    input: "Tanh"
+    input: "Affine_2/affine/W"
+    input: "Affine_2/affine/b"
+    output: "Affine_2"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_2"
+    type: "Tanh"
+    input: "Affine_2"
+    output: "Tanh_2"
+  }
+  function {
+    name: "Affine_3"
+    type: "Affine"
+    input: "Tanh_2"
+    input: "Affine_3/affine/W"
+    input: "Affine_3/affine/b"
+    output: "Affine_3"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_3"
+    type: "Tanh"
+    input: "Affine_3"
+    output: "Tanh_3"
+  }
+  function {
+    name: "Affine_4"
+    type: "Affine"
+    input: "Tanh_3"
+    input: "Affine_4/affine/W"
+    input: "Affine_4/affine/b"
+    output: "Affine_4"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Tanh_4"
+    type: "Tanh"
+    input: "Affine_4"
+    output: "Tanh_4"
+  }
+  function {
+    name: "Affine_5"
+    type: "Affine"
+    input: "Tanh_4"
+    input: "Affine_5/affine/W"
+    input: "Affine_5/affine/b"
+    output: "Affine_5"
+    affine_param {
+      base_axis: 1
+    }
+  }
+  function {
+    name: "Sigmoid"
+    type: "Sigmoid"
+    input: "Affine_5"
+    output: "Sigmoid"
+  }
+}
+dataset {
+  name: "Training"
+  uri: "C:\\app\\neural_network_console_140\\samples\\sample_dataset\\mnist\\mnist_training.csv"
+  cache_dir: "C:\\app\\neural_network_console_140\\samples\\sample_dataset\\mnist\\mnist_training.cache"
+  overwrite_cache: true
+  create_cache_explicitly: true
+  shuffle: true
+  no_image_normalization: false
+  batch_size: 64
+}
+dataset {
+  name: "Validation"
+  uri: "C:\\app\\neural_network_console_140\\samples\\sample_dataset\\mnist\\mnist_test.csv"
+  cache_dir: "C:\\app\\neural_network_console_140\\samples\\sample_dataset\\mnist\\mnist_test.cache"
+  overwrite_cache: true
+  create_cache_explicitly: true
+  shuffle: false
+  no_image_normalization: false
+  batch_size: 64
+}
+optimizer {
+  start_iter: 0
+  end_iter: 0
+  name: "Optimizer"
+  update_interval: 1
+  network_name: "Main"
+  dataset_name: "Training"
+  solver {
+    type: "Adam"
+    weight_decay: 0
+    adam_param {
+      alpha: 0.001
+      beta1: 0.9
+      beta2: 0.999
+      eps: 1e-08
+    }
+    lr_scheduler_type: "Exponential"
+    exponential_scheduler_param {
+      gamma: 1
+      iter_interval: 1
+    }
+    lr_decay: 1
+    lr_decay_interval: 1
+    lr_warmup_scheduler_type: "None"
+  }
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  data_variable {
+    variable_name: "SoftmaxCrossEntropy_T"
+    data_name: "y"
+  }
+  loss_variable {
+    variable_name: "SoftmaxCrossEntropy"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_4/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_4/affine/b"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/W"
+    learning_rate_multiplier: 1
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/b"
+    learning_rate_multiplier: 1
+  }
+}
+monitor {
+  name: "train_error"
+  network_name: "MainValidation"
+  dataset_name: "Training"
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  data_variable {
+    variable_name: "SoftmaxCrossEntropy_T"
+    data_name: "y"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "SoftmaxCrossEntropy"
+  }
+}
+monitor {
+  name: "valid_error"
+  network_name: "MainValidation"
+  dataset_name: "Validation"
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  data_variable {
+    variable_name: "SoftmaxCrossEntropy_T"
+    data_name: "y"
+  }
+  monitor_variable {
+    type: "Error"
+    variable_name: "SoftmaxCrossEntropy"
+  }
+}
+executor {
+  name: "Executor"
+  network_name: "MainRuntime"
+  num_evaluations: 1
+  repeat_evaluation_type: "mean"
+  need_back_propagation: false
+  no_image_normalization: false
+  data_variable {
+    variable_name: "Input"
+    data_name: "x"
+  }
+  output_variable {
+    variable_name: "Sigmoid"
+    data_name: "y'"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_2/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_3/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_4/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_4/affine/b"
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/W"
+  }
+  parameter_variable {
+    variable_name: "Affine_5/affine/b"
+  }
+}
