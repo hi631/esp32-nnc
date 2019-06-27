@@ -1,0 +1,1 @@
+void nnc_main();
