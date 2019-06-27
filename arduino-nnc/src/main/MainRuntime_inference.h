@@ -35,23 +35,29 @@ int nnablart_mainruntime_free_context(void* context);
 /// Number of input buffers.
 #define NNABLART_MAINRUNTIME_NUM_OF_INPUT_BUFFERS (1)
 /// Input buffer sizes.
-#define NNABLART_MAINRUNTIME_INPUT0_SIZE (4)
+#define NNABLART_MAINRUNTIME_INPUT0_SIZE (784)
 /// Pointer of allocated buffer.
 float* nnablart_mainruntime_input_buffer(void* context, int index);
 
 /// Number of output buffers.
 #define NNABLART_MAINRUNTIME_NUM_OF_OUTPUT_BUFFERS (1)
 /// Output buffer sizes.
-#define NNABLART_MAINRUNTIME_OUTPUT0_SIZE (3)
+#define NNABLART_MAINRUNTIME_OUTPUT0_SIZE (10)
 /// Pointer of allocated buffer.
 float* nnablart_mainruntime_output_buffer(void* context, int index);
 /// Number of parameter buffers.
-#define NNABLART_MAINRUNTIME_NUM_OF_PARAM_BUFFERS (4)
+#define NNABLART_MAINRUNTIME_NUM_OF_PARAM_BUFFERS (10)
 /// Parameter buffer sizes.
-#define NNABLART_MAINRUNTIME_PARAM0_SIZE (80)
-#define NNABLART_MAINRUNTIME_PARAM1_SIZE (20)
-#define NNABLART_MAINRUNTIME_PARAM2_SIZE (60)
-#define NNABLART_MAINRUNTIME_PARAM3_SIZE (3)
+#define NNABLART_MAINRUNTIME_PARAM0_SIZE (200704)
+#define NNABLART_MAINRUNTIME_PARAM1_SIZE (256)
+#define NNABLART_MAINRUNTIME_PARAM2_SIZE (32768)
+#define NNABLART_MAINRUNTIME_PARAM3_SIZE (128)
+#define NNABLART_MAINRUNTIME_PARAM4_SIZE (8192)
+#define NNABLART_MAINRUNTIME_PARAM5_SIZE (64)
+#define NNABLART_MAINRUNTIME_PARAM6_SIZE (2048)
+#define NNABLART_MAINRUNTIME_PARAM7_SIZE (32)
+#define NNABLART_MAINRUNTIME_PARAM8_SIZE (320)
+#define NNABLART_MAINRUNTIME_PARAM9_SIZE (10)
 /// Pointer of allocated buffer.
 float* nnablart_mainruntime_param_buffer(void* context, int index);
 

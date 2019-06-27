@@ -23,10 +23,14 @@ void loop() {
 
 File spf;
 int seekpos = 0;
-extern "C" FILE *os_fopen(char fn[], char md[]) {
-  spf = SPIFFS.open( fn, md); if (!spf) Serial.println("File Open Error");  return NULL; }
+extern "C" bool os_fopen(char fn[], char md[]) {
+  spf = SPIFFS.open( fn, md); 
+  if (!spf) { Serial.println("File Open Error"); return false; }  
+  else      {                                     return true;  }
+}
 extern "C" int os_fseek(File *fp, int slen, int smd) { return spf.seek( slen, SeekSet); }
-extern "C" int os_fread(unsigned char buf[], int siz, int len, File *fp) { return spf.read( buf, siz*len); }
+extern "C" int os_fread(unsigned char buf[], int siz, int len, File *fp) { 
+  int rc = spf.read( buf, siz*len);  return rc; }
 extern "C" int os_fgets(unsigned char buf[], File *fp) { 
   String rd = spf.readStringUntil('\n');
   rd.toCharArray((char *)buf, rd.length());  return rd.length();}
