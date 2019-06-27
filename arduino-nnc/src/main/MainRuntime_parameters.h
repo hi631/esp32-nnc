@@ -23,7 +23,7 @@
 extern "C" {
 #endif /* __cplusplus */
 
-extern void* MainRuntime_parameters[10];
+extern void* MainRuntime_parameters[4];
 
 #ifdef __cplusplus
 }
