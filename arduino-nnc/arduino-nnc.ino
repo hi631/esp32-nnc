@@ -22,15 +22,14 @@ void loop() {
 }
 
 File spf;
-int seekpos = 0;
-extern "C" bool os_fopen(char fn[], char md[]) {
-  spf = SPIFFS.open( fn, md); 
-  if (!spf) { Serial.println("File Open Error"); return false; }  
-  else      {                                     return true;  }
+int checkFile(fs::FS &fs, const char * path){
+  spf = fs.open(path);
+  if(!spf || spf.isDirectory()) return 0; else return 1;
 }
+extern "C" int os_fopen(char fn[], char md[]) { int rc = checkFile(SPIFFS, fn); return rc; }
 extern "C" int os_fseek(File *fp, int slen, int smd) { return spf.seek( slen, SeekSet); }
 extern "C" int os_fread(unsigned char buf[], int siz, int len, File *fp) { 
-  int rc = spf.read( buf, siz*len);  return rc; }
+  int rc = spf.read( buf, siz*len);  return rc/siz; }
 extern "C" int os_fgets(unsigned char buf[], File *fp) { 
   String rd = spf.readStringUntil('\n');
   rd.toCharArray((char *)buf, rd.length());  return rd.length();}
