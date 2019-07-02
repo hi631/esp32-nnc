@@ -31,7 +31,7 @@ Public Class Form1
         Dim canvas As New Bitmap(Pic1.Width, Pic1.Height)
         Dim g As Graphics = Graphics.FromImage(canvas)
 
-        Dim img As Image = Image.FromFile(Tex1.Text)
+        Dim img As Image = Image.FromFile(Text1.Text)
         Pic1.Image = img
         Dim P As Bitmap
         Dim bc As Color
@@ -70,5 +70,25 @@ Public Class Form1
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         getbf()
         dispbmp()
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Dim files As String() = System.IO.Directory.GetFiles(Text3.Text, "*", System.IO.SearchOption.AllDirectories)
+        Dim fmax = files.Length
+        Dim i, pfn, bfn
+        For i = 0 To fmax - 1
+            pfn = files(i)
+            If Microsoft.VisualBasic.Right(pfn, 3) = "png" Then
+                bfn = Mid(pfn, 1, Len(pfn) - 3) + "bin"
+                Text1.Text = pfn
+                Text2.Text = bfn
+                cnvp2s()
+                Application.DoEvents()
+            End If
+        Next
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        End
     End Sub
 End Class
