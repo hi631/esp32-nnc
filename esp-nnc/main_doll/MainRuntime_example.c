@@ -33,7 +33,7 @@ int main(int argc, char* argv[])
 {
 	char buf[256];
 	//char *datafn[8] = { "0_1.bin","1_1.bin","2_1.bin","3_1.bin", "4_1.bin","4_2.bin","9_1.bin","9_2.bin" };
-	char *datafn[8] = { "Doll_01(9).bin","1_1.bin","2_1.bin","3_1.bin", "4_1.bin","4_2.bin","9_1.bin","9_2.bin" };
+	char *datafn[8] = { "Doll_01(9).bin","Doll_02(2).bin","Doll_03(2).bin","Doll_04(3).bin", "Doll_05(8).bin","Doll_06(0).bin","Doll_07(6).bin","Doll_08(3).bin" };
 #ifdef _WIN32
 	char *dirn = "data\\";
 #else
