@@ -36,7 +36,7 @@ float Reduce_and_cut(unsigned char bdp[], float *idbf){
         for( h=0; h<28; h++){
         	for( w=0; w<28; w++){
             	int hh=(h+1)*4; int ww=(w+6)*4; // Dot position on screen size 160x120
-                int d4s=(bdp[hh*ws+ww] + bdp[hh*ws+ww+1] + bdp[(hh+1)*ws+ww] +bdp[(hh+1)*ws+ww+1]) / 4; // Take an average of 4
+                int d4s=(bdp[hh*ws+ww] + bdp[hh*ws+ww+2] + bdp[(hh+2)*ws+ww] +bdp[(hh+2)*ws+ww+2]) / 4; // Take an average of 4
                 float dt=d4s; dt=dt/256;         // range from 0.00 to 0.99 with fload
                 idbf[h*28+w]= dt;               // Store in input location
             	if(dt>maxdt) maxdt=dt;
