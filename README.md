@@ -31,8 +31,7 @@ For See below for details
 
 [Does ESP32 Dream of Deep Learning? [5] (Real-time DeepLearning with camera images)](https://qiita.com/hi631/items/fb672a572f9ecff97acd)
 
-
-
+<BR>
 
 #ESP32‚Å‚¨ŽèŒy‚ÉDeepLearning
 
