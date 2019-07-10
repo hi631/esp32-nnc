@@ -2,6 +2,8 @@
 
 	arduino-nnc	: DeepLearning development environment by arduino
 	
+    arduino-nnc-cam: Real-time DeepLearning development environment by arduino
+    
 	esp-nnc		: DeepLearning development environment by esp-idf
 	
     esp-cam: Acquisition of images for learning
@@ -31,12 +33,15 @@ For See below for details
 
 [Does ESP32 Dream of Deep Learning? [5] (Real-time DeepLearning with camera images)](https://qiita.com/hi631/items/fb672a572f9ecff97acd)
 
+[Does ESP32 Dream of Deep Learning? [6] (Real-time DeepLearning with arduino)] (https://qiita.com/hi631/items/076804f2c2eae335c225)
 <BR>
 
 #ESP32‚Å‚¨èŒy‚ÉDeepLearning
 
 	arduino-nnc	 : arduino‚É‚æ‚éDeepLearningŠJ”­ŠÂ‹«
 	
+    arduino-nnc-cam@F@arduino‚É‚æ‚éƒŠƒAƒ‹ƒ^ƒCƒ€DeepLearningŠJ”­ŠÂ‹«
+    
 	esp-nnc 	: esp-idf‚É‚æ‚éDeepLearningŠJ”­ŠÂ‹«
 	
     esp-cam@@F@ŠwK—p‰æ‘œ‚Ìæ“¾
@@ -65,3 +70,5 @@ For See below for details
 [‚d‚r‚o‚R‚Q‚Í[‚¢ŠwK‚Ì–²‚ğŒ©‚é‚©H\[‚S\](‰æ‘œƒf[ƒ^‚ğì¬‚µ‚ÄlŒ`‚ğ”F¯‚µ‚Ä‚İ‚½)](https://qiita.com/hi631/items/d6573dbe5b8d30f4ed1b)
 
 [‚d‚r‚o‚R‚Q‚Í[‚¢ŠwK‚Ì–²‚ğŒ©‚é‚©H\[‚T\](ƒJƒƒ‰‰æ‘œ‚ÅƒŠƒAƒ‹ƒ^ƒCƒ€DeepLearning)](https://qiita.com/hi631/items/fb672a572f9ecff97acd)
+
+[‚d‚r‚o‚R‚Q‚Í[‚¢ŠwK‚Ì–²‚ğŒ©‚é‚©H\[‚U\](arduino‚ÅƒŠƒAƒ‹ƒ^ƒCƒ€DeepLearning)](https://qiita.com/hi631/items/076804f2c2eae335c225)
