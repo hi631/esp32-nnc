@@ -1,9 +1,8 @@
 #include "FS.h"
 #include "SPIFFS.h"
+#include "esp_camera.h"
 
-//extern "C" {
-//  #include "src\nnc_main.h"
-//}
+extern "C" int nnc_main(unsigned char* bdp);
 
 void listDir(fs::FS &fs, const char * dirname, uint8_t levels){
   printf("Spiffs.Dir.Info\n");
@@ -20,15 +19,21 @@ void nnc_setup() {
   Serial.print("Setup_NNC\n");    
   if (!SPIFFS.begin(true)) { Serial.println("SPIFFS Mount Failed"); return; } 
   //listDir(SPIFFS, "/", 0); printf("\n");
-
-  //nnc_main();
-  
-  Serial.print("Wait For Trig\n");
-  //while(1); // Stop     
 }
 
 // the loop routine runs over and over again forever:
 void nnc_loop() {
+    camera_fb_t *fb = NULL;
+    fb = esp_camera_fb_get();
+
+	unsigned char *fbp = (unsigned char *)fb->buf;
+	for(int i;i<160*120; i++) fbp[i] = fbp[i*2+0]; // Compless YUYV(2B) to Grayscale(1B)
+    memmove( fbp+15, fbp,160*120);
+    memcpy( fbp, "P5 160 120 255\n", 15); // Set header
+
+	nnc_main(fbp+15); // Call NNC
+
+    esp_camera_fb_return(fb);
 }
 
 File spf;
